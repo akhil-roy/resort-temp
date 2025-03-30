@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css"/>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
      <script src="assets/js/tailwind.js"></script>
     <title>Resort Temp..</title>
@@ -14,21 +14,40 @@
 <body>
     <!-- Header section -->
     <header id="header" class="text-gray-600 body-font flex items-center justify-center">
-        <div class="container mx-auto flex md:justify-around py-5 px-10 flex-col md:flex-row items-center">
-          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <img class="h-10 w-10 rounded-xl" src="data:image/webp;base64,UklGRuYCAABXRUJQVlA4INoCAADwEQCdASrQAEAAPp1OokulpKOhptXYyLATiWkAFcAdrXPD+dj/LEByBHIq1OMsVTzKf+z5Svqb2CekN6Gf6wEEQEqHUyoZB1YMA2HVrID3Ln9ZNyvA4lSEFEmjfuBSxzWAdV+ICK18kCVADqCsWB0eFpc376WEZrzFhE6tIFeAOCqD0WKY6pIJZg6ZSnss9g2OEBKh1MqDwAD+8QCAAjgXhPTn29dtPnoEgMVwXcGqNp9PB7nVi3c5SZFGyyyHqxk4HBxCcjefwbxUGjwz09Nqk/+F3IHv1Qn5XiZ00/+8vkY4xLYT5Ngh2Qgxi9haXI+aPz2s1/MwBBqvvvEfQZcDI6TCD0t7Vqz59kTo9CSoz9bsI5+W+V1AL7+Af+gCHmblzd9JMULf/x4rJB/pyyUkUpvA8KOFQG1aSPmZJOuZogVmQTs8mh1LYPqvbWfkGyrsP/uLZLbYdxUDmjFK8UMCPfOoY4lE+W7FuWfetkVYOsflCvVnaI4WOHm0E13J28s/ctgnAOudssDlhaOmlex8/qkj+fOEX9aS8v5WXe/cAM+osplLJWMF/5D9aP/ZvPl/j2f5fA5Wd5+uL0ff309QxkstzaZNwUqrTg6I1TEnFUtKNBcXfDMUan/tcix6tJon82VV6o2Ct4ea6swuit28MdJPRvDvmsoSOcn56Nh8VrUYB9hfHRPGB6W8GSX7KR2wHwzPazuS/ydYGSZedAqP50xkPa/ZUnYl6wKk57Qhg9v52fj6QDO9295EsdAc3EBE61m9znRuRWsvtXZoSySFn3zF8rDcv/wHWaUBXEXThRKmlt78YPQ/IYZQy7ika/YtdDp9wItbPxL6oKy6bI8HjCoBrnk3pmUwM9/w32Hp0nJQTTpy+rw+ly3j4ZeqHPY19eRX4wb1UH5w1TViDhfsVYrOCzC5Bva/aO3EHrfLrtLcXCWT2L5BZzD+gLGe5Dbz0dVvZQAAAAAA" alt="logo">
-            <p class="text-white text-2xl font-ultrabold px-3">The Resort</p>
-          </a>
-          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-lg font-semibold justify-center">
-              <a class="mr-5 text-white hover:text-amber-400 cursor-pointer " href="index.html">Home</a>
-              <a class="mr-5 text-white hover:text-amber-400 cursor-pointer " href="about.html">About</a>
-              <a class="mr-5 text-amber-400 cursor-pointer" href="#">Rooms</a>
-              <a class="mr-5 hover:text-amber-400 text-white cursor-pointer" href="gallery.html">Gallery</a>
-              <a class="mr-5 hover:text-amber-400 text-white cursor-pointer" href="contact.html">Contact</a>
-          </nav>
-          <button class="inline-flex items-center bg-amber-400 border-0 cursor-pointer outline-1 focus:outline-none  rounded font-bold text-white mt-4 hover:bg-amber-500">Make A Reservation
-          </button>
+      <div class=" w-full h-full relative mx-auto flex justify-between md:justify-around px-5 md:py-5 md:px-10  items-center">
+        <a class="flex flex-col title-font justify-center items-center font-medium items-center text-gray-900">
+          <img class="h-10 w-10 rounded-xl" src="data:image/webp;base64,UklGRuYCAABXRUJQVlA4INoCAADwEQCdASrQAEAAPp1OokulpKOhptXYyLATiWkAFcAdrXPD+dj/LEByBHIq1OMsVTzKf+z5Svqb2CekN6Gf6wEEQEqHUyoZB1YMA2HVrID3Ln9ZNyvA4lSEFEmjfuBSxzWAdV+ICK18kCVADqCsWB0eFpc376WEZrzFhE6tIFeAOCqD0WKY6pIJZg6ZSnss9g2OEBKh1MqDwAD+8QCAAjgXhPTn29dtPnoEgMVwXcGqNp9PB7nVi3c5SZFGyyyHqxk4HBxCcjefwbxUGjwz09Nqk/+F3IHv1Qn5XiZ00/+8vkY4xLYT5Ngh2Qgxi9haXI+aPz2s1/MwBBqvvvEfQZcDI6TCD0t7Vqz59kTo9CSoz9bsI5+W+V1AL7+Af+gCHmblzd9JMULf/x4rJB/pyyUkUpvA8KOFQG1aSPmZJOuZogVmQTs8mh1LYPqvbWfkGyrsP/uLZLbYdxUDmjFK8UMCPfOoY4lE+W7FuWfetkVYOsflCvVnaI4WOHm0E13J28s/ctgnAOudssDlhaOmlex8/qkj+fOEX9aS8v5WXe/cAM+osplLJWMF/5D9aP/ZvPl/j2f5fA5Wd5+uL0ff309QxkstzaZNwUqrTg6I1TEnFUtKNBcXfDMUan/tcix6tJon82VV6o2Ct4ea6swuit28MdJPRvDvmsoSOcn56Nh8VrUYB9hfHRPGB6W8GSX7KR2wHwzPazuS/ydYGSZedAqP50xkPa/ZUnYl6wKk57Qhg9v52fj6QDO9295EsdAc3EBE61m9znRuRWsvtXZoSySFn3zF8rDcv/wHWaUBXEXThRKmlt78YPQ/IYZQy7ika/YtdDp9wItbPxL6oKy6bI8HjCoBrnk3pmUwM9/w32Hp0nJQTTpy+rw+ly3j4ZeqHPY19eRX4wb1UH5w1TViDhfsVYrOCzC5Bva/aO3EHrfLrtLcXCWT2L5BZzD+gLGe5Dbz0dVvZQAAAAAA" alt="logo">
+          <p class="text-white text-lg sm:text-xl md:text-2xl font-medium sm:font-semibold md:font-ultrabold px-3">The Resort</p>
+        </a>
+        <nav class="md:ml-auto md:mr-auto flex  items-center text-lg font-semibold justify-center">
+            <a class="mr-5 text-white hover:text-amber-400 cursor-pointer " href="\">Home</a>
+            <a class="mr-5 text-white hover:text-amber-400 cursor-pointer " href="about.html">About</a>
+            <a class="mr-5 text-amber-400 cursor-pointer" href="#">Rooms</a>
+            <a class="mr-5 hover:text-amber-400 text-white cursor-pointer" href="gallery.html">Gallery</a>
+            <a class="mr-5 hover:text-amber-400 text-white cursor-pointer" href="contact.html">Contact</a>
+        </nav>
+
+        <button class="inline-flex items-center bg-amber-400 border-0 cursor-pointer outline-1 focus:outline-none  rounded font-bold text-white mt-4 hover:bg-amber-500">Make A Reservation
+        </button>
+
+        <div id="openBtn" class="togg-button">
+          <i class="fa-solid fa-navicon text-xl text-slate-100"></i>
         </div>
+
+        <div id="menu" class="menu md:hidden w-full h-[100vh] absolute top-0 left-0">
+          <div class="relative w-3/5 bg-black h-full flex flex-col items-center justify-center gap-20 ">
+            <button id="closeBtn" class="absolute top-0 right-0"><i class="fa-solid fa-close text-xl text-white z-[99999999]"></i></button>
+            <a class="mr-5 text-white hover:text-amber-400 cursor-pointer " href="\">Home</a>
+            <a class="mr-5 text-white hover:text-amber-400 cursor-pointer " href="about.html">About</a>
+            <a class="mr-5 text-amber-400 cursor-pointer" href="#">Rooms</a>
+            <a class="mr-5 hover:text-amber-400 text-white cursor-pointer" href="gallery.html">Gallery</a>
+            <a class="mr-5 hover:text-amber-400 text-white cursor-pointer" href="contact.html">Contact</a>
+            <button class="absolute bottom-0 w-full h-[100px] items-center bg-amber-400 border-0 cursor-pointer outline-1 focus:outline-none font-bold text-white hover:bg-amber-500">Make A Reservation
+            </button>
+          </div>
+        </div>
+
+      </div>
     </header>
 
     <!-- Banner section -->
@@ -335,7 +354,7 @@
               </li>
             </ul>
           </div>
-      </div>
+        </div>
     </footer>
 
     <script src="assets/js/script.js"></script>
