@@ -1,0 +1,128 @@
+
+@media screen and (max-width:768px) ,(width:768px) {
+    header{
+        height: 100px;
+    }
+    header.active{
+        height: 60px;
+    }
+    header nav,
+    header button{
+        display: none;
+    }
+    header > div > a{
+        margin-left: 0px;
+    }
+    header.active > div > a{
+        transform: translatey(10%);
+    }
+    header > div > a >p{
+        opacity: 1;
+        transition: all 0.7s ease-in-out;
+    }
+    header.active > div > a >p{
+        opacity: 0;
+    }
+    .togg-button{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+    }
+    #slide .item{
+        width: 90px;
+        height:120px;
+        border-radius: 12px;
+        top: 80%;
+        box-shadow:  0 18px 18px #121212;
+    }
+    #slide .item:nth-child(4){
+        left:calc(50% + 100px);
+    }
+    #slide .item:nth-child(5){
+        left:calc(50% + 200px);
+        z-index: 1111;
+    }
+    #slide .item:nth-child(n+6){
+        left:calc(50% + 300px);
+        opacity: 1;
+    }
+    #slide .item .content{
+        text-align: center;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    #backToTopBtn{
+        bottom: 10px;
+        right: 15px;
+        width:25px;
+        height: 25px;
+        padding: 5px;
+        font-size: 12px;
+    }
+    .buttons{
+        bottom: 15px;
+    }
+    .buttons button{
+        width: 25px;
+        height: 25px;
+    }
+    .features-image > div > div{
+        box-shadow:  0px 0px 0px 5px #ffffff;
+    }
+    .pool-card{
+        transform: translateX(0%);
+        backdrop-filter: blur(2px);
+    }
+    .room-card{
+        width: 300px;
+        height: 417px;
+    }
+    .room-card.layer-2{
+        width: 300px;
+        height: 417px;
+    }
+
+}
+
+@media screen and ( min-width:769px) {
+    .togg-button{
+        display:none;
+    }
+    header > div > button{
+        padding-block: 8px;
+        padding-inline: 20px;
+    }
+}
+
+@media screen  and ( max-width:992px) and ( min-width:769px) {
+    header > div > a{
+        scale:1;
+        margin-left: 10px;
+    }
+    header > div > nav{
+        scale: 1;
+        justify-content: center;
+        gap:0px;
+    }
+    header.active > div > nav{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width:992px) {
+    header > div > a{
+        scale:1.1;
+        margin-left: 30px;
+    }
+    header > div > nav{
+        scale: 1.1;
+        justify-content: center;
+        gap:10px;
+    }
+}
+@media screen and (min-width:1300px) {
+    header > div > a{
+        flex-direction: row;
+    }
+}
