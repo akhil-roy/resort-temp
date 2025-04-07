@@ -9,6 +9,8 @@
     <title>Resort Temp..</title>
 </head>
 <body>
+
+  
     <!-- Header section -->
     <header id="header" class="text-gray-600 body-font flex items-center justify-center">
         <div class=" w-full h-full relative mx-auto flex justify-between md:justify-around px-20 md:py-5 md:px-10  items-center">
@@ -107,7 +109,7 @@
     <!-- features section -->
     <section class="text-black body-font self-center md:px-20 my-12">
         <div class=" flex px-5 py-5 lg:flex-row flex-col justify-around items-center">
-            <div class="lg:flex-grow flex flex-col w-full lg:w-1/2 lg:text-left mb-16 md:mb-0 items-center text-center">
+            <div class="lg:flex-grow flex flex-col w-full lg:w-1/2 lg:text-left mb-16 md:mb-0 items-center text-center js-scroll slide-left">
                 <h1 class="tracking-wide text-3xl md:text-6xl xl:text-7xl mb-4 font-bold ">Invite Friends and Enjoy Your Vacation
                 </h1>
                 <p class="mb-8 text-sm sm:text-md md:text-lg leading-relaxed opacity-50 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, sit ut fermentum posuere platea. Cras turpis adipiscing varius id sed leo morbi. Morbi amet, lectus pretium et vitae duis lectus in lorem. </p>
@@ -115,7 +117,7 @@
                     <button class="inline-flex text-white hover:bg-black bg-amber-400 py-1 md:py-2 px-4 md:px-8 focus:outline-none hover:bg-opacity-80 rounded font-semibold text-sm md:text-md">Read More</button>
                 </div>
             </div>
-            <div class="features-image w-full lg:w-1/2 md:pl-24 md:pt-12 lg:pt-0">
+            <div class="features-image w-full lg:w-1/2 md:pl-24 md:pt-12 lg:pt-0  js-scroll slide-right">
 
               <div class="w-full h-[350px] md:h-[600px] relative">
                 <div class="w-[60%] h-[65%] absolute overflow-hidden top-0 right-0 z-[1]">
@@ -137,7 +139,7 @@
 
             </div>
         </div>
-        <div class="container mx-auto max-w-5xl flex gap-12 flex-wrap items-start justify-center md:justify-between px-5 md:px-0">
+        <div class="container mx-auto max-w-5xl flex gap-12 flex-wrap items-start justify-center md:justify-between px-5 md:px-0 js-scroll fade-in-bottom">
             <div class="grid gap-4 justify-items-center text-center md:flex-1">
                 <div class=" rounded-full border-2 md:border-4 border-amber-400 px-4 py-3">
                     <i class="fa-solid fa-square-parking text-2xl md:text-4xl"></i>
@@ -171,9 +173,9 @@
     </section>
     
     <!-- pool card  section -->
-    <section class="w-full h-[90vh] flex items-center justify-center py-10 bg-cover bg-bottom text-center" style="background-image: url(assets/images/pool.jpg);">
+    <section class="w-full h-[90vh] flex items-center justify-center py-10 bg-cover bg-bottom text-center js-scroll fade-in-bottom" style="background-image: url(assets/images/pool.jpg);">
       <div class="w-full flex items-center justify-center md:justify-end">
-        <div class="pool-card md:max-w-md flex flex-col justify-center gap-8 items-center ring-1 ring-slate-50 ">
+        <div class="pool-card md:max-w-md flex flex-col justify-center gap-8 items-center ring-1 ring-slate-50 js-scroll slide-right ">
           <h3 class="text-3xl font-bold">Infinity Pool</h3>
           <p class="text-md font-medium text-justify tracking-tight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris sceleri sque, at rutrum nulla dictum.</p>
           <div class="block w-full flex flex-col md:flex-row gap-5 md:justify-around md:items-center text-center">
@@ -198,14 +200,14 @@
     <!-- adventure section -->
     <section class="w-full px-5 lg:px-0 py-10 my-5 flex items-center justify-center">
         <div class="w-full md:w-fit md:flex mx-auto gap-8">
-          <div class="w-full md:w-fit mb-5 md:mb-0 mt-10"> 
+          <div class="w-full md:w-fit mb-5 md:mb-0 mt-10 js-scroll slide-left"> 
             <h2 class="text-4xl text-center font-bold -mt-10 md:px-3 py-10">Adventure Unleashed :<br> Trails, Treks, and Beyond </h2>
             <div class="relative w-full md:w-fit h-fit">
               <img src="assets/images/Kart.jpg" alt="" class="w-full md:w-[500px] h-[700px] object-cover rounded-sm">
               <div class="white-box"></div>
             </div>
           </div>
-          <div class="w-full md:max-w-[550px] text-justify flex flex-col items-center justify-center">
+          <div class="w-full md:max-w-[550px] text-justify flex flex-col items-center justify-center js-scroll slide-right">
             <div class="relative w-full md:w-fit h-fit">
               <img src="assets/images/elephant.jpg" alt="" class="w-full md:w-[550px] h-[650px] object-cover rounded-sm">
               <div class="white-box"></div>
@@ -220,7 +222,7 @@
     </section>
 
     <!-- Rooms Section -->
-    <section class="w-full flex flex-col items-center justify-center px-5 md:px-0 py-10">
+    <section class="w-full flex flex-col items-center justify-center px-5 md:px-0 py-10 js-scroll fade-in-bottom">
       <div class="max-w-3xl flex flex-col items-center justify-center">
         <hr class="mb-10 text-amber-500 w-30"  style="scale: 2;">
         <h2 class="text-2xl font-bold pb-5">Pick A Room</h2>
@@ -272,7 +274,7 @@
     </section>
 
     <!-- testimonial section -->
-    <section class="h-screen w-full flex flex-col justify-center items-center " style="background-image: url('assets/images/Contour\ Line.svg'); background-size:cover;">
+    <section class="h-screen w-full flex flex-col justify-center items-center js-scroll fade-in-bottom" style="background-image: url('assets/images/Contour\ Line.svg'); background-size:cover;">
         <h2 class="text-4xl font-bold text-center my-8 bg-white px-4 py-2 ">Hear what our past guests have to say</h2>
         <section class="bg-gray-50 ">
             <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
@@ -304,7 +306,7 @@
 
     <!-- Booking Section -->
     <section class="w-full md:flex md:items-center md:justify-center md:gap-10 pt-20 md:py-20 md:px-20 bg-cover">
-      <div class="w-full md:w-2/5">
+      <div class="w-full md:w-2/5 js-scroll slide-left">
         <p class="text-center md:text-left w-full h-fit text-md font-medium text-amber-600/70 tracking-wide ml-1 bg-white">Make Appointment</p>
         <h1 class="text-center md:text-left w-full h-fit text-5xl font-bold tracking-wide bg-white">Book A Room</h1>
         <form action="" class="rooms-form flex flex-col">
@@ -343,13 +345,13 @@
           <button type="submit" class="px-5 py-3 mx-4 md:mx-0 font-bold bg-amber-400 text-black hover:bg-black hover:text-slate-100 active:bg-black active:text-slate-100">Book Now</button>
         </form>
       </div>
-      <div class="w-full h-[75vh] md:w-2/5">
+      <div class="w-full h-[75vh] md:w-2/5 js-scroll slide-right">
         <img src="assets/images/resort-2.jpg" alt="nature" class="w-full h-full object-cover">
       </div>
     </section>
 
     <!-- instafeed section -->
-    <section class="instaFeed w-full relative">
+    <section class="instaFeed w-full relative js-scroll">
       <div class="img-track w-full flex">
         <img src="assets/images/bed.jpg" alt="">
         <img src="assets/images/boating.jpg" alt="">
@@ -374,7 +376,7 @@
     </section>
 
     <!-- footer section -->
-    <footer class="bg-black">
+    <footer class="bg-black js-scroll">
         <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
             <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
               <div class="sm:col-span-2">

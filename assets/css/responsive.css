@@ -7,7 +7,7 @@
         height: 60px !important;
     }
     header nav,
-    header button{
+    header > div > button{
         display: none !important;
     }
     header > div > a{

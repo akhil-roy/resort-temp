@@ -1404,6 +1404,10 @@ video {
   padding-left: 0.75rem;
 }
 
+.pl-32{
+  padding-left: 8rem;
+}
+
 .pr-3{
   padding-right: 0.75rem;
 }
@@ -1762,7 +1766,7 @@ header.active > div > button{
 }
 
 .menu {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.9);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   transform: translateX(-100%);
@@ -2087,6 +2091,65 @@ header.active > div > button{
 
 .img-gall img{
   margin-bottom: 20px;
+}
+
+/* animation on scroll */
+
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+}
+
+.scrolled.fade-in-bottom {
+  animation: fade-in-bottom 1s ease-in-out both;
+}
+
+.scrolled.slide-left {
+  animation: slide-in-left 1s ease-in-out both;
+}
+
+.scrolled.slide-right {
+  animation: slide-in-right 1s ease-in-out both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .hover\:bg-amber-500:hover{
@@ -2451,6 +2514,10 @@ header.active > div > button{
     padding-top: 3rem;
   }
 
+  .md\:pl-32{
+    padding-left: 8rem;
+  }
+
   .md\:text-left{
     text-align: left;
   }
@@ -2661,4 +2728,6 @@ header.active > div > button{
     line-height: 1;
   }
 }
+  
 
+  
